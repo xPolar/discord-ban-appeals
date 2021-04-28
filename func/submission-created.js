@@ -33,6 +33,7 @@ exports.handler = async function (event, context) {
         const userInfo = decodeJwt(payload.token);
         const message = {
             embed: {
+                color: 5750233,
                 title: "New appeal submitted!",
                 timestamp: new Date().toISOString(),
                 fields: [
